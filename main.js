@@ -8,7 +8,7 @@ const checkbox = document.querySelectorAll('.checkbox');
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
 const numeros = '0123456789';
-const simbolos = '!@#$%*?';
+const simbolos = '!@#$%*?§]£}&';
 const forcaSenha = document.querySelector('.forca');
 
 botoes[0].onclick = diminuiTamanho;
@@ -73,5 +73,7 @@ function classificaSenha(tamanhoAlfabeto){
         forcaSenha.classList.add('fraca');
     }
     const valorEntropia = document.querySelector('.entropia');
-    valorEntropia.textContent = "Um computador pode levar até " + Math.floor(2**entropia/(100e6*60*60*24)) + "dias para descobrir essa senha";
+    valorEntropia.textContent = "Um computador pode levar até " + Math.floor(2**entropia/(100e6*60*60*24)) + " dias para descobrir essa senha";
+    valorEntropia.style.fontSize = "24px";
+
 }

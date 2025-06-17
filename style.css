@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=WDXL+Lubrifont+SC&display=swap');
+
+
 :root {
     --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
-    --roboto: 'Roboto', sans-serif;
-    --roboto-mono: 'Roboto Mono', monospace;
+    --cor-de-fundo: #0e002e;
+    --fundo-senha: #17004d;
+    --fundo-texto: #130040;
+    --borda: #5900ff;
+    --roboto: 'Itim';
+    --roboto-mono: 'WDXL Lubrifont';
 }
 
 * {
@@ -26,7 +29,7 @@ body {
 }
 
 .titulo-secundario {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .conteudo-titulo {
@@ -39,6 +42,11 @@ body {
     background: var(--fundo-senha);
     padding: 24px;
     border-bottom: 6px solid var(--borda);
+}
+
+label[for="Senha"]{
+    font-size: 25px;
+    margin-right: 1rem;
 }
 
 #campo-senha {
@@ -101,6 +109,14 @@ body {
     cursor: pointer;
 }
 
+.parametro-senha__botao:first-child{
+    border-radius: 60px 0 0 60px;
+}
+
+.parametro-senha__botao:last-child{
+    border-radius: 0 60px 60px 0;
+}
+
 .parametro-senha__texto {
     padding: 24px;
     border-top: 2px solid var(--borda);
@@ -110,7 +126,7 @@ body {
 }
 
 label{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .checkbox{
@@ -147,8 +163,11 @@ label{
 }
 
 .parametro-senha-textos{
+    font-size: 22px;
     display: flex;
     justify-content: space-between;
+    margin-top: -1.4rem;
+    margin-bottom: -0.8rem;
 }
 
 @media screen and (min-width: 768px) {
