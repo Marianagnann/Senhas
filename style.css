@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=WDXL+Lubrifont+SC&display=swap');
-
 
 :root {
     --branco: white;
@@ -34,7 +31,12 @@ body {
 
 .conteudo-titulo {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
+}
+
+.cadeado{
+    width: 100px;
+    height: auto;
 }
 
 .conteudo-senha {
